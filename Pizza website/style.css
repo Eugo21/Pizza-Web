@@ -1,9 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+    font-size: 16px;
 }
 
+s
 #navbar {
     padding: 8px;
 }
@@ -48,19 +51,30 @@ h1 {
 
 .jobs-table {
     width: 100%;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 8px;
+    border-collapse: collapse; /* Collapse borders so they don't double up */
+    margin: 0 auto; /* Center the table */
 }
 
-.job-header th{
-    border: 1px solid   black;
+.job-header th {
+
+    border: 1px solid black; /* Add borders to header and data cells */
+    padding: 8px; /* Add padding to the cells */
+    text-align: center
+}
+.jobe-data td {
+    border: 1px solid black; /* Add borders to header and data cells */
+    padding: 8px; /* Add padding to the cells */
+
 }
 
-
-.jobe-data {
-    border: 1px solid  black;
+.job-header th {
+    background-color: #f2f2f2; /* Light gray background for header */
 }
+
+.jobe-data td {
+    background-color: #fff; /* White background for job data rows */
+}
+
 
 h2 {
     text-align: center;

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swedis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -53,36 +56,48 @@
 
 
     <h2>Job Opportunities</h2>
-<div id="jobs">
-    <table  class="jobs-table">
-        <tr class="job-header">
-            <th>Job Title</th>
-            <th>Location</th>
-            <th>Salary</th>
-            <th>Post On</th>
-        </tr>
-        <tr class="jobe-data">
-            <td>Chef assistant</td>
-            <td>Kenya, Nairobi</td>
-            <td>KES 50,000</td>
-            <td>Oct 19, 2024</td>
-        </tr>
-        <tr class="jobe-data">
-            <td>Cashier</td>
-            <td>Kenya, Nairobi</td>
-            <td>KES 15,000</td>
-            <td>Oct 25, 2024</td>
+    <div id="jobs">
+        <table class="jobs-table">
+            <thead>
+                <tr class="job-header">
+                    <th rowspan="2">Job Title</th>
+                    <th colspan="2">Location</th>
+                    <th rowspan="2">Salary</th>
+                    <th rowspan="2">Post On</th>
+                </tr>
 
-        </tr>
+                <tr class="job-header">
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
 
-        <tr class="jobe-data">
-            <td>Graphic designer</td>
-            <td>Kenya, Nairobi</td>
-            <td>KES 20,000</td>
-            <td>Oct 27, 2024</td>
-        </tr>
-    </table>
-</div>
+            <tbody>
+                <tr class="jobe-data">
+                    <td>Chef assistant</td>
+                    <td>Nairobi</td>
+                    <td>Kenya</td>
+                    <td>KES 50,000</td>
+                    <td>Oct 19, 2024</td>
+                </tr>
+                <tr class="jobe-data">
+                    <td>Cashier</td>
+                    <td>Nairobi</td>
+                    <td>Kenya</td>
+                    <td>KES 15,000</td>
+                    <td>Oct 25, 2024</td>
+                </tr>
+                <tr class="jobe-data">
+                    <td>Graphic designer</td>
+                    <td>Nairobi</td>
+                    <td>Kenya</td>
+                    <td>KES 20,000</td>
+                    <td>Oct 27, 2024</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
 </body>
 
 </html>
