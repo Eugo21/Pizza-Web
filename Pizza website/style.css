@@ -4,6 +4,8 @@ body {
     font-family: 'Oswald', sans-serif;
     text-align: justify;
     font-size: 16px;
+    color: orangered;
+    background-color: black;
 }
 
 s
@@ -45,7 +47,7 @@ h1 {
 #side-image {
     border-radius: 5px;
     width: 100%;
-    
+    margin-left: 40px;
         
 }
 
@@ -53,6 +55,7 @@ h1 {
     width: 100%;
     border-collapse: collapse; /* Collapse borders so they don't double up */
     margin: 0 auto; /* Center the table */
+    
 }
 
 .job-header th {
@@ -78,6 +81,7 @@ h1 {
 
 h2 {
     text-align: center;
+    margin-top: 20px;
 }
 
 #jobs {
@@ -105,3 +109,17 @@ h3 {
     margin-left: -25px;
     
 }
+
+#copyright {
+    text-align: center;
+}
+
+.low-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#youtube {
+    padding: 20px;
+}
+
