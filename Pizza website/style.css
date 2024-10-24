@@ -1,19 +1,17 @@
-html {
-    font-size: 16px;
-    color: orangered;
-    background-color: black;
-}
-
-
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
     text-align: justify;
-    font-size: 16px;
-    color: orangered;
-    background-color: black;
+    font-size: 1rem;
+    color: #F2613F;
+    background-color: #481E14;
+    font-weight: 600;
+}  
+
+h1, h2, h3, h4, h5, h6 {
+    
+    color: #F2613F;
 }
 
 
@@ -139,8 +137,8 @@ h3 {
 
 #youtube {
     padding: 20px;
+    color: #F2613F;
 }
-
 
 #content {
 
@@ -158,5 +156,5 @@ h3 {
 }
 
 #our {
-    color: #F2613F
+    color: #F2613F;
 }
