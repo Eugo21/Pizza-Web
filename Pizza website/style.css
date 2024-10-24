@@ -11,11 +11,12 @@ body {
     padding: 0;
     font-family: 'Oswald', sans-serif;
     text-align: justify;
-    
-    
+    font-size: 16px;
+    color: orangered;
+    background-color: black;
 }
 
-s
+
 #navbar {
     padding: 8px;
 }
@@ -49,6 +50,8 @@ h1 {
 
 #team {
     width: 50%;
+    border-color: #A64B2A;
+    border: 20px;
 }
 
 #side-image {
@@ -62,27 +65,31 @@ h1 {
     width: 100%;
     border-collapse: collapse; /* Collapse borders so they don't double up */
     margin: 0 auto; /* Center the table */
+    background-color: black;
     
 }
 
 .job-header th {
+    background-color: black;
 
-    border: 1px solid black; /* Add borders to header and data cells */
+    border: px solid black; /* Add borders to header and data cells */
     padding: 8px; /* Add padding to the cells */
     text-align: center
 }
 .jobe-data td {
-    border: 1px solid black; /* Add borders to header and data cells */
+    border: 5px solid black; /* Add borders to header and data cells */
     padding: 8px; /* Add padding to the cells */
 
 }
 
 .job-header th {
-    background-color: #f2f2f2; /* Light gray background for header */
+    background-color: #8E3200; /* Light gray background for header */
+    border-color: #BA704F;
 }
 
 .jobe-data td {
-    background-color: #fff; /* White background for job data rows */
+    background-color: #8E3200; /* White background for job data rows */
+    border-color: #BA704F;
 }
 
 
@@ -95,6 +102,7 @@ h2 {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 8px;
+    
 }
 
 
@@ -115,26 +123,21 @@ h3 {
 .links {
     margin-left: -25px;
     
+    
 }
 
 #copyright {
     text-align: center;
+    color: #F2613F;
 }
 
 .low-links {
     margin-top: 10px;
     text-align: center;
+    
 }
 
 #youtube {
     padding: 20px;
-    color: #f2f2f2;
 }
 
-#content {
-    color: #f2f2f2;
-}
-
-#info {
-    color: #f2f2f2;
-}
