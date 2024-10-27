@@ -81,12 +81,12 @@ h1 {
 }
 
 .job-header th {
-    background-color: #8E3200; /* Light gray background for header */
+    background-color: #652401; /* Light gray background for header */
     border: 3px solid #BA704F;
 }
 
 .jobe-data td {
-    background-color: #8E3200; /* White background for job data rows */
+    background-color: #652401; /* White background for job data rows */
     border-color: #BA704F;
 }
 
@@ -162,4 +162,42 @@ h3 {
 a {
     text-decoration: none; /* Removes the underline */
     color: #FF9F66;
+}
+
+#Application {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#apply-form {
+    font-weight: 600;
+}
+
+#apply-form input, select, textarea {
+    font-size: 1.25rem;
+    padding: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+.form-group textarea{
+    
+
+    width: 80%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.form-group input[type="submit"]{
+
+    background-color: #F2613F;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 16px 16px 16px 16px;
+    border-color: 4px solid white;
 }

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swedis</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +17,7 @@
             src="https://media.istockphoto.com/id/1284770763/vector/slice-of-pizza-logo-for-advertising.jpg?b=1&s=170x170&k=20&c=NVYl36Jfe4gcRnD9iN0LBGtYHOPXSFt9ED-aNw1NNUo="
             alt="Pizza logo">
     </div>
-    <img id="banner" src="frt.png" alt="Front">
+    <img id="banner" src="piz22.jpg" alt="Front">
     <h1>About Swedi's Pizza</h1>
 
     <div id="about">
@@ -34,14 +34,14 @@
             <p> Here get informanation about our restaurant:
             <ol>
                 <li>
-                    <a  href="https://www.youtube.com/watch?v=T3AHBe0I0yc" target="_blank" height="110" width="100">
+                    <a href="https://www.youtube.com/watch?v=T3AHBe0I0yc" target="_blank" height="110" width="100">
                         Video about our restaurant.
                     </a>
 
                 </li>
 
                 <li>
-                    <a  href="https://www.youtube.com/watch?v=CYPLmrJjxOM" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=CYPLmrJjxOM" target="_blank">
                         Other Video about our restaurant.
                     </a>
                 </li>
@@ -74,7 +74,7 @@
 
             <tbody>
                 <tr class="jobe-data">
-                    <td>Chef assistant</td>
+                    <td>Chef Assistant</td>
                     <td>Nairobi</td>
                     <td>Kenya</td>
                     <td>KES 50,000</td>
@@ -88,7 +88,7 @@
                     <td>Oct 25, 2024</td>
                 </tr>
                 <tr class="jobe-data">
-                    <td>Graphic designer</td>
+                    <td>Graphic Designer</td>
                     <td>Nairobi</td>
                     <td>Kenya</td>
                     <td>KES 20,000</td>
@@ -101,27 +101,66 @@
 
     <h2>Submit Your Application</h2>
 
-    <div>
-        <form action="process-form.php" methods="post">
+    <div id="Application">
+        <form id="apply-form" action="process-form.php" methods="post">
 
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+            <div class="form-group">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" required placeholder="Luke Skywalker">
             </div>
 
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="skywalker@resistance.com">
             </div>
 
-            <div>
-                <label for="message">Message</label>
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+904421838433">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required placeholder="21/10/1993">
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position Applied for</label><br>
+                <select id="position" name="Position Applied" required>
+                    <option value="">Select Position</option>
+                    <option value="Chef Assistant">Chef Assistant</option>
+                    <option value="Crashier">Crashier</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Uplaod Resume</label><br>
+                <input type="file" id="resume" name="resume" accept="pdf, .doc, .docx">
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea id="coverletter" name="coverletter" rows="5" required
+                    placeholder="Explain what makes you suitable for the job.."></textarea>
+            </div>
+
+            
+
+            <div class="form-group">
+                <label for="message">Message</label><br>
                 <textarea id="email" id="email" name="email" required></textarea>
             </div>
 
-            <div>
-                <input type="submit" value="Submit"
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
             </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit" </div>
         </form>
     </div>
 
