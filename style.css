@@ -1,3 +1,7 @@
+html {
+    font-size: 14px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,13 +11,52 @@ body {
     color: #F2613F;
     background-color: #481E14;
     font-weight: 600;
-}  
+}
 
-h1, h2, h3, h4, h5, h6 {
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "inter", sans-serif;
+    font-weight: 600;
     color: #F2613F;
 }
 
+h1 {
+    font: 2.5rem;
+}
+
+h2 {
+    font: 2rem;
+}
+
+h3 {
+    font: 1.75rem;
+}
+
+h4 {
+    font: 1.5rem;
+}
+
+h5 {
+    font: 1.25rem;
+}
+
+h6 {
+    font: 1rem;
+}
+
+a {
+    color: #f2613f;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #f2613f;
+}
 
 #navbar {
     padding: 8px;
@@ -23,71 +66,37 @@ h1, h2, h3, h4, h5, h6 {
     height: 75px;
     margin: 0;
 }
-h1 {
-    text-align: center;
-
-}
 
 #banner {
     object-fit: cover;
+    height: 150px;
     width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 8px 0;
 }
 
 #about {
     display: flex;
-    max-width: 800px;
+    flex-direction: column;
+    max-width: 500px;
     margin: 0 auto;
     padding-right: 8px;
 }
 
 #description {
-    width: 50%;
-    padding: 0 8px;
-    
-}
-
-#team {
-    width: 50%;
-    border-color: #A64B2A;
-    border: 20px;
+    font-size: 1.25rem;
 }
 
 #side-image {
     border-radius: 5px;
     width: 100%;
-    margin-left: 40px;
-        
 }
 
-.jobs-table {
+#team {
     width: 100%;
-    border-collapse: collapse; /* Collapse borders so they don't double up */
-    margin: 0 auto; /* Center the table */
-    background-color: black;
-    
-}
-
-.job-header th {
-    background-color: black;
-
-    border: px solid black; /* Add borders to header and data cells */
-    padding: 8px; /* Add padding to the cells */
-    text-align: center
-}
-.jobe-data td {
-    border: 3px solid black; /* Add borders to header and data cells */
-    padding: 8px; /* Add padding to the cells */
-
-}
-
-.job-header th {
-    background-color: #652401; /* Light gray background for header */
-    border: 3px solid #BA704F;
-}
-
-.jobe-data td {
-    background-color: #652401; /* White background for job data rows */
-    border-color: #BA704F;
 }
 
 
@@ -97,11 +106,181 @@ h2 {
 }
 
 #jobs {
-    max-width: 800px;
+    color: #f2613f;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
-    color: #FFFAE6;
+
 }
+
+#jobs-list {
+    display: block;
+}
+
+.jobs-table {
+    display: none;
+}
+
+/* Small Devices (tablets) */
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    h1 {
+        margin: 8px 0;
+    }
+}
+
+/* Medium Devices (LAPTOPS) */
+
+@media screen and (min-width: 768px) {
+
+    /* rules */
+    #banner {
+        height: 300px;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    #about {
+        max-width: 900px;
+        margin: 0 auto;
+        /* Center the whole container on the page */
+        display: flex;
+        flex-direction: row;
+        /* Side-by-side */
+        justify-content: center;
+        /* Center content horizontally */
+        align-items: center;
+
+
+    }
+
+    #description {
+        flex: 1;
+
+    }
+
+    #side-image {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    #team {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    #jobs {
+        min-width: 800px;
+    }
+
+    #jobs-list {
+        display: none;
+    }
+
+    .jobs-table {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black;
+
+
+    }
+
+    .job-header th {
+        background-color: black;
+
+        border: px solid black;
+        padding: 8px;
+        text-align: center
+    }
+
+    .jobe-data td {
+        border: 3px solid black;
+        padding: 8px;
+
+    }
+
+    .job-header th {
+        background-color: #2f0202;
+        border: 3px solid #BA704F;
+    }
+
+    .jobe-data td {
+        background-color: #5a0000;
+        border-color: #BA704F;
+    }
+
+}
+
+/* Large Devices (desktops) */
+
+@media screen and (min-width: 992px) {
+
+    /* rules */
+    h1 {
+        margin: 16px 0;
+    }
+
+    #team {
+        width: 50%;
+    }
+
+    #side-image {
+        width: 50%;
+    }
+}
+
+/* Extra Large Devices (desktops) */
+
+@media screen and (min-width: 1200px) {
+
+    /* rules */
+    #banner {
+        height: 320px;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+}
+
+/*
+
+
+h1, h2, h3, h4, h5, h6 {
+    
+    color: #F2613F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 h3 {
@@ -160,7 +339,7 @@ h3 {
 }
 
 a {
-    text-decoration: none; /* Removes the underline */
+    text-decoration: none; 
     color: #FF9F66;
 }
 
@@ -201,3 +380,4 @@ a {
     padding: 16px 16px 16px 16px;
     border-color: 4px solid white;
 }
+*/
