@@ -121,6 +121,44 @@ h2 {
     display: none;
 }
 
+#Application {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#apply-form {
+    font-weight: 600;
+}
+
+#apply-form input, select, textarea {
+    font-size: 1.25rem;
+    padding: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+.form-group textarea {
+
+
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.form-group input[type="submit"] {
+
+    background-color: #F2613F;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 16px 16px 16px 16px;
+    border-color: 4px solid white;
+}
+
 /* Small Devices (tablets) */
 @media screen and (min-width: 576px) {
     html {
@@ -343,41 +381,7 @@ a {
     color: #FF9F66;
 }
 
-#Application {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
 
-#apply-form {
-    font-weight: 600;
-}
 
-#apply-form input, select, textarea {
-    font-size: 1.25rem;
-    padding: 8px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    border-radius: 5px;
-    border: 1px solid gray;
 
-}
-
-.form-group textarea{
-    
-
-    width: 80%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.form-group input[type="submit"]{
-
-    background-color: #F2613F;
-    color: white;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 16px 16px 16px 16px;
-    border-color: 4px solid white;
-}
 */
